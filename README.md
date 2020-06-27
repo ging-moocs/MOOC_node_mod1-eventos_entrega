@@ -108,7 +108,7 @@ Cada elemento del array es un objeto con dos claves:
 	* **temperatura**: un número con la nueva temperatura ideal a programar.
 
 Con la configuración del ejemplo se programaría una temperatura de 22ºC todos los días a las 7 de la mañana, 18ºC todos los días a las 8:30, 22ºC todas las tardes a las 6, y 20ºC todos los días a las 11 de la noche.
-Se recomienda usar el módulo Later.js (https://bunkat.github.io/later) para implementar el módulo `programador.js`. Recuerde instalarlo con `npm install`. El módulo Later.js permite planificar instantes de tiempo en los que ejecutar tareas. Por ejemplo, para escribir por consola la palabra "hola" todos los días a las 18:00, se podría usar el siguiente código:
+Se recomienda usar el módulo Later.js (https://bunkat.github.io/later) para implementar el módulo `programador.js`. Recuerde instalarlo con `npm install. El módulo Later.js permite planificar instantes de tiempo en los que ejecutar tareas. Por ejemplo, para escribir por consola la palabra "hola" todos los días a las 18:00, se podría usar el siguiente código:
 
 ```
 // Importar modulo Later.js:
@@ -192,3 +192,10 @@ $ npx moocauto                 ## Pasa los tests al fichero a entregar
 ```
 
 Se puede pasar la herramienta de autocorrección tantas veces como se desee.
+
+A la hora de evaluar, el evaluador tendrá que seguir los siguientes criterios:
+
+**RÚBRICA**: Se puntuará el ejercicio a corregir sumando el % indicado a la nota total si la parte indicada es correcta:
+
+* **40%:** Tarea 1
+* **60%:** Tarea 2
