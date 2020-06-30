@@ -112,7 +112,11 @@ describe("Node eventos", function () {
         } else {
             this.msg_ok = `Encontrado '${expected}'`;
             this.msg_err = `No se encuentra '${expected}'`;
-            checkFileExistsOrError(expected, this.msg_err);
+            const err = await checkFileExistsOrError(expected, this.msg_err);
+            if (err) {
+                error_critical_prog = err;
+                should.not.exist(error_critical_prog);
+            }
         }
     });
 
@@ -136,8 +140,8 @@ describe("Node eventos", function () {
                 }));
                 if (error) {
                     this.msg_err = `Error al parsear el fichero '${expected}'`;
-                    error_critical = this.msg_err;
-                    should.not.exist(error_critical);
+                    error_critical_prog = this.msg_err;
+                    should.not.exist(error_critical_prog);
                 }
                 should.not.exist(error);
             }
@@ -158,13 +162,15 @@ describe("Node eventos", function () {
             } else {
                 this.msg_ok = `Export class '${expected}' encontrada en el fichero '${JS_PROGRAMMER}'`;
                 try {
-                    output = require.resolve(path.join(path_assignment, JS_PROGRAMMER)).toString();
+                    // output = require.resolve(path.join(path_assignment, JS_PROGRAMMER)).toString();
+                    output = fs.readFileSync(JS_PROGRAMMER, { encoding: 'utf8' });
                 } catch (error) {
                     this.msg_err = `Export class '${expected}' NO encontrada en el fichero '${JS_PROGRAMMER}'`;
                     error.should.not.exist();
                 }
-                this.msg_err = `Export class '${expected}' encontrada en el fichero '${JS_PROGRAMMER}'`;
+                this.msg_err = `Export class '${expected}' NO encontrada en el fichero '${JS_PROGRAMMER}'`;
                 Utils.search(expected, output).should.be.equal(true);
+                Utils.search("exports", output).should.be.equal(true);
             }
         }
     });
@@ -177,10 +183,11 @@ describe("Node eventos", function () {
                 should.not.exist(error_critical);
             } else {
                 this.msg_ok = `Encontrado el fichero '${expected}'`;
-                this.msg_err = `Couldn't find the file '${expected}'`;
+                this.msg_err = `No se encuentra '${expected}'`;
                 const err = await checkFileExistsOrError(path.join(path_assignment, expected),this.msg_err,error_critical);
                 if (err) {
-                    error_critical = err;
+                    error_critical_ev = err;
+                    should.not.exist(error_critical_ev);
                 }
             }
         }
