@@ -134,7 +134,8 @@ Finalmente, en el programa principal main.js deben añadirse los siguientes camb
 	* Importar el módulo `programador.js` para crear un objeto **Programador**.
 	* Añadir las sentencias necesarias para que cuando el programador emita un evento **"ideal"**, se ajuste la nueva temperatura ideal en el termostato.
 
-## Tarea 2: Events
+### Tarea 2: Events
+
 En esta tarea se pide al alumno que cree su propia implementación del módulo **events**, y que la integre en el programa de ejemplo, sustituyendo al módulo events proporcionado por Node.js. 
 
 La implementación pedida al alumno es una versión reducida de la proporcionada por Node.js. El alumno solo debe implementar los métodos **emit** y **on**.
