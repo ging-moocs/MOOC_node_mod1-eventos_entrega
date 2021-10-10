@@ -4,7 +4,7 @@
 
 // IMPORTS
 const path = require('path');
-const Utils = require('./utils');
+const Utils = require('./testutils');
 const child_process = require("child_process");
 const spawn = require("child_process").spawn;
 const fs = require("fs");

@@ -5,12 +5,13 @@
   "version": "0.0.0",
   "info": {
     "githubURL": "ging-moocs/MOOC_node_mod1-eventos_entrega",
-    "serverUrl": "https://autocorector.dit.upm.es/",
-    "courseId": "2",
-    "assignmentId": "17"
+    "serverUrl": "https://moocauto.dit.upm.es/",
+    "courseId": "452",
+    "assignmentId": "230"
   },
   "engines": {
-    "node": "^12.16.0"
+    "node": "^16.8.0",
+    "npm": "^7.21.0"
   },
   "main": "main.js",
   "scripts": {
