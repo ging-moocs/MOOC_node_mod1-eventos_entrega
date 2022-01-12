@@ -4,7 +4,7 @@
 
 <br/><br/><br/>
 
-# Módulo 1: Introducción a Node.js, Módulos, Paquetes npm, Eventos y Ficheros - Entrega P2P: Eventos
+# Módulo 1: Introducción a Node.js - Eventos
 
 ## Objetivos
  * Aprender cómo funciona la programación asíncrona basada en eventos implementada por el modulo events y la clase EventEmitter
