@@ -18,4 +18,3 @@ termostato.on('tic', (temp) => console.log(`${temp.toFixed(1)}ºC`));
 termostato.indicarTemperaturaIdeal(20);
 programador.on('ideal' , (temp) => termostato.indicarTemperaturaIdeal(temp));
 termostato.encender();
-
