@@ -7,7 +7,7 @@
         "githubURL": "ging-moocs/MOOC_node_mod1-eventos_entrega",
         "serverUrl": "https://moocauto.dit.upm.es/",
         "courseId": "452",
-        "assignmentId": "230"
+        "assignmentId": "244"
     },
     "engines": {
         "node": "^16.8.0",
