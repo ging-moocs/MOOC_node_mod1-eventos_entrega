@@ -8,7 +8,7 @@ const Utils = require("../utils/testutils");
 const child_process = require("child_process");
 const spawn = require("child_process").spawn;
 const fs = require("fs");
-const path_assignment = path.resolve(path.join(__dirname, "../"));
+const path_assignment = path.resolve(path.join(__dirname, "../.."));
 
 // CRITICAL ERRORS
 let error_critical = null;
@@ -139,6 +139,7 @@ describe("Node eventos", function () {
                     
                 }));
                 if (error) {
+                    console.log(error);
                     this.msg_err = `Error al parsear el fichero '${expected}'`;
                     error_critical_prog = this.msg_err;
                     should.not.exist(error_critical_prog);
