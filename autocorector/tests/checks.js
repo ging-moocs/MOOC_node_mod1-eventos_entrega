@@ -357,7 +357,7 @@ describe("Node eventos", function () {
             } else {
                 let output = "";
                 let error = "";
-                const client = spawn("node", ["../utils/tester.js"], {cwd: path.join(path_assignment, "tests")});
+                const client = spawn("node", ["../utils/tester.js"], {cwd: path.join(path_assignment, "autocorector/tests")});
                 client.on('error', function (data) {
                     error += data
                 });

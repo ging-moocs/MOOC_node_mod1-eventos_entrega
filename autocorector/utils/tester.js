@@ -1,7 +1,7 @@
-const Habitacion = require('../habitacion');
-const Climatizador = require('../climatizador');
-const Termostato = require('../termostato');
-const Programador = require('../programador');
+const Habitacion = require('../../habitacion');
+const Climatizador = require('../../climatizador');
+const Termostato = require('../../termostato');
+const Programador = require('../../programador');
 const dormitorio = new Habitacion();
 dormitorio.temperatura = 22;
 const climatizador = new Climatizador(dormitorio);
