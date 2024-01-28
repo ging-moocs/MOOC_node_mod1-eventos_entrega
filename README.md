@@ -6,6 +6,8 @@
 
 # Módulo 1: Introducción a Node.js - Eventos
 
+Versión: 14 de enero de 2024
+
 ## Objetivos
  * Aprender cómo funciona la programación asíncrona basada en eventos implementada por el modulo events y la clase EventEmitter
  * Emplar callbacks, clases y módulos de Node.js.
