@@ -6,8 +6,8 @@
     "info": {
         "githubURL": "ging-moocs/MOOC_node_mod1-eventos_entrega",
         "serverUrl": "https://moocbot.dit.upm.es/",
-        "courseId": "138",
-        "assignmentId": "44"
+        "courseId": "349",
+        "assignmentId": "155"
     },
     "engines": {
         "node": ">=16.8.0",
